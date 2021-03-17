@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInputComponent : BaseGridMovement
+public class PacMan : BaseGridMovement
 {
     protected override void Update()
     {

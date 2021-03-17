@@ -328,8 +328,8 @@ MonoBehaviour:
   BaseGridObjectsPrefabs:
   - {fileID: 1532694005906346152, guid: 003a6b6dc920f8e4dae52054406e907c, type: 3}
   - {fileID: 5022910957015364265, guid: a6b23b97c5cf5164cb33117b730af179, type: 3}
-  - {fileID: 4637442129912888877, guid: 1fa2b7b7bf6d10249ba8d865b1b230c2, type: 3}
-  - {fileID: 7620890683222106900, guid: cbe50b59aeae73e468624b78a7f45cb1, type: 3}
+  - {fileID: 6095154535130334315, guid: 1fa2b7b7bf6d10249ba8d865b1b230c2, type: 3}
+  - {fileID: -4850300716090751752, guid: cbe50b59aeae73e468624b78a7f45cb1, type: 3}
 --- !u!4 &1917587296
 Transform:
   m_ObjectHideFlags: 0

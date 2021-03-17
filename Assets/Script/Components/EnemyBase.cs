@@ -4,7 +4,7 @@ using UnityEngine;
 
 //Rider
 //Resharper (Visual studio plugin, Jetbrains
-public class EnemyInputComponent : BaseGridMovement
+public class EnemyBase : BaseGridMovement
 {
     private IntVector2[] movementDirections = new IntVector2[]
     {
