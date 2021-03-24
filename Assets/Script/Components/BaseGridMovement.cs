@@ -20,6 +20,7 @@ public class BaseGridMovement : BaseGridObject
     protected virtual void Update()
     {
         //Check if we're arrived to the target position
+
         if (transform.position == targetGridPosition.ToVector3())
         {
             progressToTarget = 0f;
