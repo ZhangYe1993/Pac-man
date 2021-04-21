@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PacMan : BaseGridMovement
+
+    
 {
     protected override void Update()
     {
+        //public event Action CollectionEvent;
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -25,4 +29,6 @@ public class PacMan : BaseGridMovement
         }
         base.Update();
     }
+
+
 }

@@ -46,6 +46,9 @@ public class EnemyBase : BaseGridMovement
             var direction = Random.Range(0, possibleDirections.Count);
             currentInputDirection = possibleDirections[direction];
         }
+
+        FrozenEvent frozen = new FrozenEvent();
+
         base.Update();
     }
 }

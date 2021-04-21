@@ -5,19 +5,25 @@ using UnityEngine;
 public class LevelGeneratorSystem : MonoBehaviour
 {
     public BaseGridObject[] BaseGridObjectsPrefabs;
+    //public static int[,] LevelGrid = new int[,]
+
+    public List<string> LevelFileNames = new List<string>();
+
     public static int[,] Grid = new int[,]
     {
         { 1,1,1,1,1,1,1,1,1,1},
-        { 1,0,1,0,0,0,0,3,0,1},
+        { 1,0,1,0,4,0,0,3,0,1},
         { 1,0,2,0,0,1,0,0,0,1},
         { 1,1,0,0,0,1,1,0,0,1},
-        { 1,0,0,1,0,1,0,0,1,1},
+        { 1,0,0,1,0,1,4,0,1,1},
         { 1,0,0,1,0,3,0,0,0,1},
         { 1,1,1,1,1,1,1,1,1,1}
     };
 
-    void Start()
+    private void Awake()
     {
+         var level = LevelFileNames[Random.Range(0, LevelFileNames.Count - 1)];
+         Grid = Appdatasystem.Load<Level> (level).grid;
         for(int i = 0 ; i < Grid.GetLength(0); i++)
         {
             for(int j = 0; j < Grid.GetLength(1); j ++)
@@ -31,4 +37,10 @@ public class LevelGeneratorSystem : MonoBehaviour
             }
         }
     }
+
+   
+}
+public class Level
+{
+    public int[,] grid;
 }
